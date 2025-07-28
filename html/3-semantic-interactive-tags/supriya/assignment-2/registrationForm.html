@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>Registration Form along with validation</title>
 </head>
 <body>
-    
+    <form>
+        <label for="name">Name : </label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required >
+        <br>
+        <label for="exp">Experience : </label>
+        <input type="number" id="exp" name="exp" min="0" max="50" placeholder="Enter your experience in years" step="1" required>
+        <br>
+        <label for="dob">Date of Birth : </label>
+        <input type="date" id="dob" name="dob" value = "DD-MM-YYYY" min = "01-01-1985" max="31-12-2020" placeholder="Enter your date of birth" required>
+        <br>
+        <label for="country">Mobile Number : </label>
+        <select name="country" id="country">
+            <option value="+1">+1</option>
+            <option value="+49">+49</option>
+            <option value="+91">+91</option>
+        </select>
+        <input type="tel" id="tel" name="tel" pattern="[0-9]" maxlength = "10" placeholder="Enter your 10-digit phone number" required>
+        <br>
+        <label for="email">Email : </label>
+        <input type="email" id="email" name="email" placeholder="example123@gmail.com" multiple required>
+        <br>
+        <label for="password">Password : </label>
+        <input type="password" id="password" name="password" required minlength="8">
+        <br>
+        <label for="confirm-password">Confirm Password : </label>
+        <input type="password" id="confirm-password" name="confirm-password" required minlength="8">
+        <br>
+        <br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+        <p class="para">Please ensure that the password matches the confirmation field and meets the required criteria.</p>
+        <p class="para">Note: The password must be at least 8 characters long and contain a mix of letters, numbers, and special characters.</p>
+        <p class="para">For any issues, please contact support at <a href="mailto:dasarisupriya3012@gmail.com">dasarisupriya3012@gmail.com</a>.</p>
+    </form>
 </body>
 </html>
