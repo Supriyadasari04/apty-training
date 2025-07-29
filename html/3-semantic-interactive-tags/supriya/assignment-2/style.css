@@ -1,0 +1,115 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and form container */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f7ff;
+  padding: 40px;
+  color: #333;
+}
+
+form {
+  background: #fff;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0b3d91;
+}
+
+/* Labels and inputs */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #0b3d91;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+/* Country code and phone input side-by-side */
+#country,
+#tel {
+  width: 48%;
+  display: inline-block;
+}
+
+#country {
+  margin-right: 4%;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"] {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  background-color: #1a73e8;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="reset"] {
+  background-color: #f44336;
+}
+
+input[type="submit"]:hover {
+  background-color: #0b5ed7;
+}
+
+input[type="reset"]:hover {
+  background-color: #d32f2f;
+}
+
+/* Paragraphs */
+.para {
+  font-size: 0.95rem;
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Link styling */
+a {
+  color: #0b3d91;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+h1{
+    text-align: center;
+    color: #0b3d91;
+    margin-bottom: 20px;
+}

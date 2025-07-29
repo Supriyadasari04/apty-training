@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 30px;
+}
+
+/* Form Container */
+form {
+  max-width: 500px;
+  margin: auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Inputs & Textareas */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4CAF50;
+  background-color: #f9fdf9;
+  outline: none;
+}
+
+/* Button Container */
+.buttons {
+  margin-top: 25px;
+  text-align: center;
+}
+
+/* Buttons */
+button {
+  padding: 10px 16px;
+  margin: 0 8px;
+  font-size: 14px;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
