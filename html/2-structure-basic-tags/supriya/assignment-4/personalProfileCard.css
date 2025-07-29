@@ -1,12 +1,12 @@
 .profile-container {
-      display: flex;
-      align-items: flex-start;
-      border: 1px solid #ccc;
-      border-radius: 15px;
-      padding: 20px;
-      width: 550px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      font-family: Arial, sans-serif;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  width: 550px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
     }
 
 .profile-pic {
