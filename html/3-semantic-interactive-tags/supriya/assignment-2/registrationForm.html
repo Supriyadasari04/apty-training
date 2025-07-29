@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form along with validation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form>
@@ -22,7 +23,7 @@
             <option value="+49">+49</option>
             <option value="+91">+91</option>
         </select>
-        <input type="tel" id="tel" name="tel" pattern="[0-9]" maxlength = "10" placeholder="Enter your 10-digit phone number" required>
+        <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" maxlength = "10" placeholder="Enter your 10-digit phone number" required>
         <br>
         <label for="email">Email : </label>
         <input type="email" id="email" name="email" placeholder="example123@gmail.com" multiple required>
@@ -35,7 +36,7 @@
         <br>
         <br>
         <input type="submit" value="Register">
-        <input type="reset" value="Reset">
+        <input type="reset" onclick="alert('Form has been resetted. Fill your form again!')" value="Reset">
         <p class="para">Please ensure that the password matches the confirmation field and meets the required criteria.</p>
         <p class="para">Note: The password must be at least 8 characters long and contain a mix of letters, numbers, and special characters.</p>
         <p class="para">For any issues, please contact support at <a href="mailto:dasarisupriya3012@gmail.com">dasarisupriya3012@gmail.com</a>.</p>
