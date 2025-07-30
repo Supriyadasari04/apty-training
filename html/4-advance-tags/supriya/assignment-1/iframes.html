@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Embed Demo: YouTube & Google Maps</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .embed-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 720px;
+      height: 400px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Embedding Content Using &lt;iframe&gt;</h1>
+  <div class="embed-container">
+    
+    <!-- YouTube Video -->
+    <section>
+      <h2>YouTube Video: Life of Pi Trailer</h2>
+      <iframe 
+        src="https://www.youtube.com/embed/mZEZ35Fhvuc"
+        title="Life of Pi Trailer"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+        sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-forms"
+        allowfullscreen>
+      </iframe>
+      <p>This trailer gives a glimpse into Pi's breathtaking adventure across the ocean.</p>
+    </section>
+
+    <!-- Google Map -->
+    <section>
+      <h2>Google Map: India</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609868496!2d72.74109993916237!3d19.08219783961039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63fdf43a3c3%3A0xefe445b6d5c46c70!2sIndia!5e0!3m2!1sen!2sin!4v1658997223456!5m2!1sen!2sin"
+        loading="lazy"
+        title="Map of India"
+        allowfullscreen>
+      </iframe>
+      <p>Here's a map view of India, where Pi's journey began.</p>
+    </section>
+
+  </div>
+
+</body>
+</html>

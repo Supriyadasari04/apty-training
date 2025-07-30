@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom User Card</title>
+</head>
+<body>
+  <h2>Our Team</h2>
+
+  <!-- Using the custom element -->
+  <user-card 
+    name="Supriya Dasari" 
+    title="AI Developer" 
+    avatar="https://i.pravatar.cc/150?img=47">
+  </user-card>
+
+  <user-card 
+    name="Ravi Kumar" 
+    title="UI/UX Designer" 
+    avatar="https://i.pravatar.cc/150?img=32">
+  </user-card>
+
+  <!-- Template definition -->
+  <template id="user-card-template">
+    <style>
+      .card {
+        font-family: 'Arial', sans-serif;
+        background: #f4f4f4;
+        width: 250px;
+        padding: 16px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        text-align: center;
+        margin: 10px;
+      }
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+      h3 {
+        margin: 5px 0;
+        font-size: 1.1em;
+        color: #333;
+      }
+      p {
+        margin: 0;
+        color: #777;
+        font-size: 0.95em;
+      }
+    </style>
+    <div class="card">
+      <img />
+      <h3></h3>
+      <p></p>
+    </div>
+  </template>
+
+  <script>
+    // 1. Define the custom class
+    class UserCard extends HTMLElement {
+      constructor() {
+        super(); // Call the parent constructor
+        const shadow = this.attachShadow({ mode: "open" }); // Create Shadow DOM
+
+        // 2. Get template content
+        const template = document.getElementById("user-card-template");
+        const content = template.content.cloneNode(true);
+
+        // 3. Insert dynamic data
+        content.querySelector("img").src = this.getAttribute("avatar");
+        content.querySelector("h3").textContent = this.getAttribute("name");
+        content.querySelector("p").textContent = this.getAttribute("title");
+
+        // 4. Attach to shadow DOM
+        shadow.appendChild(content);
+      }
+    }
+
+    // 5. Register the element
+    customElements.define("user-card", UserCard);
+  </script>
+</body>
+</html>
