@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Embedding with sandbox & allow</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    iframe {
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      color: #d00000;
+    }
+
+    p {
+      max-width: 600px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Stranger Things - Sci-Fi Series</h1>
+
+  <p>
+    Stranger Things is an American science fiction horror drama television series. Set in the 1980s, it follows a group of young friends in the fictional town of Hawkins, Indiana, who witness supernatural forces and secret government experiments. When a young boy vanishes, they uncover a series of extraordinary mysteries involving a girl with telekinetic powers.
+  </p>
+
+  <h2>Watch the Trailer (Secure Embed)</h2>
+
+  <!-- Embedded YouTube trailer with sandbox and allow -->
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/b9EkMc79ZSU"
+    title="Stranger Things Official Trailer"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+    sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
+</body>
+</html>
