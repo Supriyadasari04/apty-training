@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <title>Embedding with sandbox & allow</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -34,7 +33,7 @@
     Stranger Things is an American science fiction horror drama television series. Set in the 1980s, it follows a group of young friends in the fictional town of Hawkins, Indiana, who witness supernatural forces and secret government experiments. When a young boy vanishes, they uncover a series of extraordinary mysteries involving a girl with telekinetic powers.
   </p>
 
-  <h2>Watch the Trailer (Secure Embed)</h2>
+  <h2>Watch the Trailer</h2>
 
   <!-- Embedded YouTube trailer with sandbox and allow -->
   <iframe
@@ -42,8 +41,8 @@
     height="315"
     src="https://www.youtube.com/embed/b9EkMc79ZSU"
     title="Stranger Things Official Trailer"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-    sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
+    allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+    sandbox="allow-scripts allow-same-origin allow-pointer-lock allow-presentation allow-popups"
     loading="lazy"
     allowfullscreen>
   </iframe>

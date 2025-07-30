@@ -21,12 +21,12 @@
       }
 
       .avatar {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         object-fit: cover;
         margin-bottom: 15px;
-        border: 3px solid #4CAF50;
+        border: 3px solid wheat;
       }
 
       h3 {
@@ -53,6 +53,7 @@
     </style>
 
     <div class="card">
+      <img class="avatar" src="supriya.png" alt="Supriya's Avatar" />
       <h3>Supriya Dasari</h3>
       <p>Technical Consultant Intern @ Apty</p>
       <p>Hyderabad, India</p>
@@ -67,7 +68,8 @@
       }
 
       connectedCallback() {
-        const shadow = this.attachShadow({ mode: "open" });
+        const shadow = this.attachShadow({ mode: "closed" });
+        
 
         const template = document.getElementById("user-card-template");
         const clone = template.content.cloneNode(true);
