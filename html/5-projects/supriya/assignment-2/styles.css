@@ -1,0 +1,140 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f7fa;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color: #58cc02;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+  background-color: #e5f7d8;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2d7c00;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #145c01;
+}
+
+/* Sections */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #145c01;
+  text-align: center;
+}
+
+/* Features List */
+#features ul {
+  list-style-type: "🌟 ";
+  padding-left: 40px;
+  font-size: 1.1rem;
+}
+
+/* Video */
+iframe {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+caption {
+  font-weight: bold;
+  padding: 10px;
+  background-color: #dff0c0;
+  color: #1f5400;
+  font-size: 1.2rem;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #e9ffe0;
+  color: #2d7c00;
+}
+
+tr:hover {
+  background-color: #f0fdf4;
+}
+
+/* Contact */
+#contact a {
+  color: #2d7c00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 50px;
+}
