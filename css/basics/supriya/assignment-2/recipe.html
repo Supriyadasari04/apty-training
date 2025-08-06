@@ -2,47 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Delicious Chocolate Cake Recipe</title>
-  <link rel="stylesheet" href="recipe.css" />
+  <title>Hyderabadi Biryani Recipe</title>
+  <style>
+    body {
+      background-color: #fffaf0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .recipe-name {
+      background-color: #800000;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 2.5em;
+      font-family: 'Georgia', serif;
+    }
+
+    .section {
+      padding: 25px;
+    }
+
+    .ingredients {
+      background-color: #e0f7fa;
+    }
+
+    .ingredients h2 {
+      color: #00695c;
+    }
+
+    .ingredients ul {
+      padding-left: 20px;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    .preparation {
+      background-color: #fffde7;
+    }
+
+    .preparation h2 {
+      color: #6d4c41;
+    }
+
+    .preparation ol {
+      padding-left: 20px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .image-section {
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+
+    .image-section img {
+      width: 95%;
+      max-width: 600px;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .caption {
+      font-style: italic;
+      margin: 10px;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #4e342e; 
+      color: white;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <h1>Delicious Chocolate Cake</h1>
-  </header>
+  <div class="container">
+    
+    <header class="recipe-name" style="letter-spacing: 1px;">
+      Hyderabadi Biryani
+    </header>
 
-  <section class="ingredients">
-    <h2>Ingredients</h2>
-    <ul>
-      <li>1 and 1/2 cups all-purpose flour</li>
-      <li>1 cup granulated sugar</li>
-      <li>1/2 cup cocoa powder</li>
-      <li>1 tsp baking soda</li>
-      <li>1/2 tsp salt</li>
-      <li>1 cup warm water</li>
-      <li>1/3 cup vegetable oil</li>
-      <li>1 tsp vanilla extract</li>
-      <li>1 tbsp vinegar</li>
-    </ul>
-  </section>
+    <section class="section ingredients" style="font-family: 'Arial', sans-serif;">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>Basmati Rice – 2 cups (soaked for 30 mins)</li>
+        <li>Chicken – 500 grams</li>
+        <li>Yogurt – 1 cup</li>
+        <li>Fried Onions – 1 cup</li>
+        <li>Mint & Coriander Leaves – chopped</li>
+        <li>Biryani Masala – 2 tbsp</li>
+        <li>Ginger-Garlic Paste – 1 tbsp</li>
+        <li>Saffron – soaked in warm milk</li>
+        <li>Ghee and Oil – as needed</li>
+        <li>Salt – to taste</li>
+      </ul>
+    </section>
 
-  <section class="steps">
-    <h2>Preparation Steps</h2>
-    <ol>
-      <li>Preheat your oven to 180°C (350°F).</li>
-      <li>In a large bowl, mix flour, sugar, cocoa, baking soda, and salt.</li>
-      <li>Add water, oil, vanilla, and vinegar. Stir until smooth.</li>
-      <li>Pour the batter into a greased cake pan.</li>
-      <li>Bake for 30–35 minutes or until a toothpick comes out clean.</li>
-      <li>Let the cake cool before slicing and serving.</li>
-    </ol>
-  </section>
+    <section class="section preparation">
+      <h2>Preparation Steps</h2>
+      <ol>
+        <li>Marinate chicken with yogurt, masala, salt, and ginger-garlic paste. Let it rest for 1–2 hours.</li>
+        <li>Cook rice 80% and drain. Set aside.</li>
+        <li>In a deep pot, add oil and layer chicken, then rice, fried onions, and chopped herbs.</li>
+        <li>Repeat layers, drizzle saffron milk, ghee, and seal the pot tightly.</li>
+        <li>Cook on low flame (dum) for 25–30 minutes.</li>
+        <li>Serve hot with raita or mirchi ka salan.</li>
+      </ol>
+    </section>
 
-  <section class="image-section">
-    <img src="chocolate-cake.jpg" alt="Delicious chocolate cake" />
-    <p class="image-caption">A soft and moist chocolate cake, ready to serve!</p>
-  </section>
+    <section class="section image-section">
+      <img src="https://media.istockphoto.com/id/488481490/photo/fish-biryani-with-basmati-rice-indian-food.jpg?s=612x612&w=0&k=20&c=9xEw3VOQSz9TP8yQr60L47uExyKF9kogRhQdlghlC00=" alt="Hyderabadi Biryani" />
+      <p class="caption">Aromatic, spicy & royal — the world-famous Hyderabadi Chicken Biryani</p>
+    </section>
+
+    <footer>
+      &copy; 2025 | Hyderabadi Biryani Recipe by Supriya Dasari
+    </footer>
+
+  </div>
 
 </body>
 </html>

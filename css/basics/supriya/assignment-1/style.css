@@ -1,0 +1,49 @@
+body {
+  background:#e0f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  padding: 30px;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+#main-heading {
+  font-size: 40px;
+  color: #1e90ff;
+}
+
+.city-info {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.attractions h2 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+.attractions ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+.attractions li {
+  background-color: #e6f2ff;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.attractions li:hover {
+  background-color: #d0eaff;
+}
