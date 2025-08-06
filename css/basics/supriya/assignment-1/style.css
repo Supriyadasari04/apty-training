@@ -32,7 +32,6 @@ body {
 .attractions ul {
   text-align: center;
   list-style: none;
-  justify-content: space-around;
   padding: 0;
 }
 .attractions li {
