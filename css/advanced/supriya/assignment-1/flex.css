@@ -68,21 +68,9 @@ body {
   flex-wrap: wrap;
 }
 
-
-.content-box {
-  flex: 1;
-  min-width: 280px;
-}
-
 .image-center {
   flex: 1;
   text-align: center;
-}
-.image-center img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .footer {
