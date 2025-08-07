@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flip Card Game</title>
+  <link rel="stylesheet" href="./media.css" />
+</head>
+<body>
+  <h1>Flip the Cards</h1>
+  <div class="card-container">
+    <div class="card">
+      <div class="inner">
+        <div class="front"></div>
+        <div class="back"><img src="https://imgcdn.stablediffusionweb.com/2024/9/13/8b6ff1e3-5f63-41b9-a7b1-73509ccfa98d.jpg" alt="Apple" /></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="inner">
+        <div class="front"></div>
+        <div class="back"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-H9pfklbunx0RQeI2w1i_JoEDQYSs37GtmiBuYYIduyjOuwdRzRJ3EFzphIZaYWQtie0&usqp=CAU" alt="Cat" /></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="inner">
+        <div class="front"></div>
+        <div class="back"><img src="https://i.pinimg.com/736x/73/85/64/738564d163fd0e3da8f852c1aa780bc3.jpg" alt="Cake" /></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="inner">
+        <div class="front"></div>
+        <div class="back"><img src="https://i.pinimg.com/736x/f0/86/c2/f086c2b68c7bc41d5371815fb4e0fc58.jpg" alt="Pizza" /></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="inner">
+        <div class="front"></div>
+        <div class="back"><img src="https://thumbs.dreamstime.com/b/traditional-roses-simple-arrangement-bouquet-harvesting-cut-flower-victorian-garden-countryside-floral-art-281615607.jpg" alt="Flower" /></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="inner">
+        <div class="front"></div>
+        <div class="back"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnViuGRifsVhknQPBMbkWtQwYVjkDsbB-ahA&s" alt="Balloon" /></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="inner">
+        <div class="front"></div>
+        <div class="back"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrhx3sCo1DgzLsf5P9nHlx-lNgoR66SlTPng&s" alt="Leaf" /></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="inner">
+        <div class="front"></div>
+        <div class="back"><img src="https://static.vecteezy.com/system/resources/previews/049/325/984/non_2x/lovely-pink-star-clipart-free-png.png" alt="Star" /></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('flipped');
+      });
+    });
+  </script>
+</body>
+</html>
