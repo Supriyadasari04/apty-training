@@ -59,15 +59,6 @@ body {
   margin-bottom: 8px;
 }
 
-
-.image-flex-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
 .image-center {
   flex: 1;
   text-align: center;
