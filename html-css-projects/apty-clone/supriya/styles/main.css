@@ -17,7 +17,7 @@
   background: linear-gradient(to right, #7c2ef9, #4f0abd);
   color: white;
   padding: 1.1vw 1.8vw;
-  font-family: "Poppins", sans-serif; /*sans-serif is fallback, which applie when poppins is not available*/
+  font-family: "Poppins", sans-serif; 
 }
 
 .ribbon-container1 {
