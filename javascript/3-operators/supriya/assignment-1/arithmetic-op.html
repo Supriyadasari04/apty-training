@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arithmetic Operators Calculator</title>
+</head>
+<body>
+  <h2>Arithmetic Operators Calculator</h2>
+
+  <label for="val1">Value 1:</label>
+  <input type="number" id="val1">
+  <br><br>
+
+  <label for="val2">Value 2:</label>
+  <input type="number" id="val2">
+  <br><br>
+
+  <button onclick="add()">+</button>
+  <button onclick="subtract()">-</button>
+  <button onclick="multiply()">*</button>
+  <button onclick="divide()">/</button>
+  <button onclick="modulus()">%</button>
+  <button onclick="increment()">++ (val1)</button>
+  <button onclick="decrement()">-- (val1)</button>
+
+  <h3>Result:</h3>
+  <div id="result"></div>
+
+  <script src="scripts/arithmetic-op.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bitwise Operators App</title>
+</head>
+<body>
+  <h2>Bitwise Operators</h2>
+
+  <label for="value1">Value 1:</label>
+  <input type="number" id="value1">
+  <br><br>
+
+  <label for="value2">Value 2:</label>
+  <input type="number" id="value2">
+  <br><br>
+
+  <button onclick="bitwiseAnd()">AND (&)</button>
+  <button onclick="bitwiseOr()">OR (|)</button>
+  <button onclick="bitwiseXor()">XOR (^)</button>
+  <button onclick="bitwiseNot()">NOT (~)</button>
+  <button onclick="leftShift()">Left Shift (<<)</button>
+  <button onclick="rightShift()">Right Shift (>>)</button>
+
+  <h3>Result:</h3>
+  <div id="result"></div>
+
+  <script src="scripts/bitwise-op.js"></script>
+</body>
+</html>

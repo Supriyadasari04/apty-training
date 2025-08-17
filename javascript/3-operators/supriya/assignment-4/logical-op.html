@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logical Operators App</title>
+</head>
+<body>
+  <h2>Logical Operators App</h2>
+
+  <label for="val1">Value 1:</label>
+  <input type="text" id="val1">
+  <label for="type1">Type:</label>
+  <select id="type1">
+    <option value="string">String</option>
+    <option value="number">Number</option>
+    <option value="boolean">Boolean</option>
+    <option value="null">Null</option>
+    <option value="undefined">Undefined</option>
+  </select>
+  <br><br>
+
+  <label for="val2">Value 2:</label>
+  <input type="text" id="val2">
+  <label for="type2">Type:</label>
+  <select id="type2">
+    <option value="string">String</option>
+    <option value="number">Number</option>
+    <option value="boolean">Boolean</option>
+    <option value="null">Null</option>
+    <option value="undefined">Undefined</option>
+  </select>
+  <br><br>
+
+  <button onclick="logicalAnd()">&&</button>
+  <button onclick="logicalOr()">||</button>
+  <button onclick="logicalNot()">!</button>
+
+  <h3>Result:</h3>
+  <div id="result"></div>
+
+  <script src="scripts/logical-op.js"></script>
+</body>
+</html>
