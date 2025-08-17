@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inline vs Internal vs External JS</title>
+    <script>
+      function runInternal() {
+        document.getElementById("output").innerHTML +=
+          "<p>Internal JS executed</p>";
+      }
+    </script>
+  </head>
+  <body>
+    <h2>JavaScript Execution Order</h2>
+    <div id="output"></div>
+    <button
+      onclick="document.getElementById('output').innerHTML += '<p>Inline JS executed</p>';"
+    >
+      Run Inline JS
+    </button>
+    <button onclick="runInternal()">Run Internal JS</button>
+    <button onclick="runExternal()">Run External JS</button>
+    <script src="./scripts/js-writing-methods.js"></script>
+  </body>
+</html>
