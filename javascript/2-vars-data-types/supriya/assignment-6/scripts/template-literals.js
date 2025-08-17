@@ -2,13 +2,13 @@ function showTemplateLiterals() {
   const output = document.getElementById("output");
   output.innerHTML = ""; 
 
-  let str = "Hello";
-  let num = 42;
-  let bool = true;
-  let undef = undefined;
-  let nul = null;
-  let sym = Symbol("id");
-  let obj = { name: "Alice", age: 25 };
+  const str = "Hello";
+  const num = 42;
+  const bool = true;
+  const undef = undefined;
+  const nul = null;
+  const sym = Symbol("id");
+  const obj = { name: "Alice", age: 25 };
 
   const results = [
     `String: The value is "${str}" and type is ${typeof str}`,
