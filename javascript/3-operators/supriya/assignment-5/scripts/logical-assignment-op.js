@@ -30,9 +30,10 @@ function showResult(op, res) {
 }
 
 function logicalAndAssign() {
-  let { converted1, converted2 } = getValues()
-  converted1 &&= converted2
-  showResult("&&=", converted1)
+  let { converted1, converted2 } = getValues();
+  converted1 &&= converted2;
+  document.getElementById("val1").value = converted1;
+  showResult("&&=", converted1);
 }
 
 function logicalOrAssign() {

@@ -1,7 +1,7 @@
 function getValues() {
-  let v1 = Number(document.getElementById("value1").value)
-  let v2 = Number(document.getElementById("value2").value)
-  return { v1, v2 }
+  const val1 = Number(document.getElementById("value1").value);
+  const val2 = Number(document.getElementById("value2").value);
+  return { val1, val2 };
 }
 
 function bitwiseAnd() {

@@ -1,13 +1,14 @@
 function getValues() {
-  let val1 = parseFloat(document.getElementById("val1").value)
-  let val2 = parseFloat(document.getElementById("val2").value)
+const val1 = parseFloat(document.getElementById("val1").value) || 0;
+  const val2 = parseFloat(document.getElementById("val2").value) || 0;
   return { val1, val2 }
 }
 
 function addAssign() {
-  let { val1, val2 } = getValues()
-  val1 += val2
-  document.getElementById("result").textContent = `Value1 += Value2 → ${val1}`
+  let { val1, val2 } = getValues();
+  val1 += val2;
+  document.getElementById("val1").value = val1;
+  document.getElementById("result").textContent = `Value1 += Value2 → ${val1}`;
 }
 
 function subtractAssign() {
