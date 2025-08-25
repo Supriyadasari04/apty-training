@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Higher-Order Function Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 600px;
+      text-align: center;
+    }
+    input, button {
+      padding: 10px;
+      margin: 8px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    ul {
+      margin-top: 20px;
+      text-align: left;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Higher-Order Function: Repeat Action</h2>
+
+  <label for="count">How many items? </label>
+  <input type="number" id="count" min="1" placeholder="e.g., 5">
+
+  <br>
+
+  <label for="content">Item content: </label>
+  <input type="text" id="content" placeholder="Enter item text">
+
+  <br>
+
+  <button onclick="generateList()">Generate List</button>
+
+  <ul id="list"></ul>
+
+  <script src="./scripts/repeat-action.js"></script>
+</body>
+</html>

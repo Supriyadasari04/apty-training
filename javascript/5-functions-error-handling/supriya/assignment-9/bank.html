@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Account with Closures</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 500px;
+      text-align: center;
+    }
+    h2 {
+      color: #333;
+    }
+    input, select, button {
+      padding: 10px;
+      margin: 8px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 20px;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <h2>Bank Account (Closures & Lexical Scoping)</h2>
+
+  <label for="action">Choose Action:</label><br>
+  <select id="action">
+    <option value="deposit">Deposit</option>
+    <option value="withdraw">Withdraw</option>
+    <option value="check">Check Balance</option>
+  </select><br>
+
+  <input type="number" id="amount" placeholder="Enter amount (if needed)"><br>
+
+  <button onclick="handleAction()">Submit</button>
+
+  <p id="output"></p>
+
+  <script src="./scripts/bank.js"></script>
+</body>
+</html>

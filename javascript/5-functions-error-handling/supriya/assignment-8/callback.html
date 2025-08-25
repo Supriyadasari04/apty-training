@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callback with Default Parameters</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input {
+      padding: 8px;
+      margin: 5px;
+      font-size: 16px;
+      width: 250px;
+    }
+    button {
+      padding: 8px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      background-color: #2196F3;
+      color: white;
+      border-radius: 5px;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Callback Function with Default Parameters</h2>
+
+  <form onsubmit="processInput(); return false;">
+    <label for="userInput">Enter a string:</label><br>
+    <input type="text" id="userInput" placeholder="Type something..."><br>
+    <button type="submit">Process</button>
+  </form>
+
+  <p id="result"></p>
+
+  <script src="./scripts/callback.js"></script>
+</body>
+</html>

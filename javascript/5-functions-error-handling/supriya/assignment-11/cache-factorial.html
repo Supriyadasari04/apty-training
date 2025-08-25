@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factorial with Caching (Closures)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 500px;
+      text-align: center;
+    }
+    h2 {
+      color: #333;
+    }
+    input, button {
+      padding: 10px;
+      margin: 8px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1e7e34;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 20px;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <h2>Factorial Calculator with Caching</h2>
+
+  <label>Enter a number: </label>
+  <input type="number" id="num" min="0" placeholder="e.g., 5">
+  <button onclick="calculateFactorial()">Get Factorial</button>
+
+  <p id="output"></p>
+
+  <script src="./scripts/cache-factorial.js"></script>
+</body>
+</html>
