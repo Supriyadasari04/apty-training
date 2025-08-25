@@ -1,4 +1,3 @@
-// Recursive Fibonacci function (Function Declaration)
 function fibonacci(n) {
   if (n <= 1) {
     return n;
@@ -6,7 +5,6 @@ function fibonacci(n) {
   return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-// Display Fibonacci series
 function showFibonacci() {
   const num = Number(document.getElementById("num").value);
   let series = [];

@@ -1,29 +1,23 @@
-// Closure to create a factorial calculator with caching
 const factorialWithCache = (function () {
-  const cache = {}; // private cache object
+  const cache = {};
 
   function factorial(n) {
     if (n === 0 || n === 1) return 1;
 
-    // Check cache first
     if (cache[n]) {
       console.log(`Fetching from cache: ${n}! = ${cache[n]}`);
       return cache[n];
     }
 
-    // Compute if not cached
     console.log(`Computing factorial of ${n}`);
     let result = n * factorial(n - 1);
 
-    // Store in cache
     cache[n] = result;
     return result;
   }
 
   return factorial;
 })();
-
-// Function connected to the button
 function calculateFactorial() {
   const num = parseInt(document.getElementById("num").value, 10);
 

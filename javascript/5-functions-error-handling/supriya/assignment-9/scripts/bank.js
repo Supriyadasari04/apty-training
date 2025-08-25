@@ -1,6 +1,5 @@
-// Bank Account using Closure
 function createBankAccount(initialBalance = 0) {
-  let balance = initialBalance; // private variable
+  let balance = initialBalance;
 
   return {
     deposit: function(amount) {

@@ -1,4 +1,3 @@
-// Function Expression for sorting numbers
 const sortArray = function(arr) {
   return arr.sort((a, b) => a - b);
 };
@@ -14,7 +13,6 @@ function sortNumbers() {
 
   const sortedArray = sortArray(numArray);
 
-  // Create table dynamically
   let table = "<table><tr><th>Index</th><th>Value</th></tr>";
   sortedArray.forEach((val, index) => {
     table += `<tr><td>${index}</td><td>${val}</td></tr>`;
