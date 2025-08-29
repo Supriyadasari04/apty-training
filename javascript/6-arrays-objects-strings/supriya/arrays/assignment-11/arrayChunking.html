@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chunk Array</title>
+  <meta charset="UTf-8"/>
+  <script src="scripts/arrayChunking.js" defer></script>
+</head>
+<body>
+
+  <h2>Chunk Array Utility</h2>
+
+  <label for="arrayInput">Enter array elements (comma-separated):</label><br>
+  <input type="text" id="arrayInput" placeholder="e.g. 1,2,3,4,5"><br><br>
+
+  <label for="chunkSize">Enter chunk size:</label><br>
+  <input type="number" id="chunkSize" placeholder="e.g. 2"><br><br>
+
+  <button onclick="handleChunk()">Split Array</button>
+
+  <div id="results"></div>
+
+</body>
+</html>
