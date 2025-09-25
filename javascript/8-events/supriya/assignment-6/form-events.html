@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Events Validation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+    .success {
+      color: green;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Registration Form</h1>
+
+  <form id="registration-form">
+    <label>
+      Username:
+      <input type="text" id="username" required>
+      <span id="username-error" class="error"></span>
+    </label>
+    <br><br>
+    <label>
+      Email:
+      <input type="email" id="email" required>
+      <span id="email-error" class="error"></span>
+    </label>
+    <br><br>
+    <label>
+      Password:
+      <input type="password" id="password" required>
+      <span id="password-error" class="error"></span>
+    </label>
+    <br><br>
+    <button type="submit">Register</button>
+  </form>
+
+  <script src="./scripts/form-events.js" defer></script>
+</body>
+</html>

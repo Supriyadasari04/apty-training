@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prevent Default Action Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>Form Validation with preventDefault()</h1>
+
+  <form id="signup-form">
+    <label>
+      Name:
+      <input type="text" id="name" name="name" required>
+    </label>
+    <br><br>
+    <label>
+      Email:
+      <input type="email" id="email" name="email" required>
+    </label>
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message" style="color: red; font-weight: bold;"></p>
+
+  <script src="./scripts/prevent-default.js" defer></script>
+</body>
+</html>

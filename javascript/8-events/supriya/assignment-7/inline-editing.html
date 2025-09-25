@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inline Editing with Mutation Observer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #editable {
+      border: 1px solid black;
+      padding: 10px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .icon {
+      margin-left: 8px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h1>Inline Editing Demo</h1>
+
+  <div id="editable">Click to edit <span class="icon">✏️</span></div>
+
+  <script src="./scripts/inline-editing.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Propagation: Capture, Target, Bubble</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .level1 {
+      border: 3px solid red;
+      padding: 30px;
+    }
+    .level2 {
+      border: 3px solid green;
+      padding: 30px;
+    }
+    .level3 {
+      border: 3px solid blue;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Event Propagation Demo</h1>
+
+  <div class="level1">
+    Level 1
+    <div class="level2">
+      Level 2
+      <div class="level3">
+        Level 3 (Click here)
+      </div>
+    </div>
+  </div>
+
+  <script src="./scripts/event-propagation.js" defer></script>
+</body>
+</html>

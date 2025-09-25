@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stop Event Propagation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .parent {
+      border: 3px solid red;
+      padding: 30px;
+    }
+    .child {
+      border: 3px solid blue;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Stop Event Propagation Demo</h1>
+
+  <div class="parent">
+    Parent Div
+    <div class="child">Child Div (Click me)</div>
+  </div>
+
+  <script src="./scripts/stop-propagation.js" defer></script>
+</body>
+</html>
