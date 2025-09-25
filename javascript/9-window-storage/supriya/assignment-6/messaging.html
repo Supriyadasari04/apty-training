@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Messaging Between iFrames</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>Messaging Demo</h1>
+
+  <iframe src="iframe-content.html" id="iframe" style="width: 500px; height: 300px;"></iframe>
+
+  <br><br>
+  <input type="text" id="message-input" placeholder="Enter message">
+  <button id="send-message">Send Message</button>
+
+  <div id="received-message"></div>
+
+  <script src="./scripts/messaging.js" defer></script>
+</body>
+</html>

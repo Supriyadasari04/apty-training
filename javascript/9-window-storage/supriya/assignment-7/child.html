@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Child Window</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>Child Window</h1>
+  <div id="message"></div>
+  <button id="send-to-parent">Send Message to Parent</button>
+
+  <script>
+    const messageDiv = document.getElementById("message");
+    document.getElementById("send-to-parent").addEventListener("click", () => {
+      if (window.opener) {
+        window.opener.postMessage("Hello from Child", "*");
+      }
+    });
+
+    window.addEventListener("message", (e) => {
+      messageDiv.textContent = "Parent says: " + e.data;
+    });
+  </script>
+</body>
+</html>
