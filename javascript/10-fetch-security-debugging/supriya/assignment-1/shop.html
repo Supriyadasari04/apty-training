@@ -9,15 +9,23 @@
 <body>
   <header>
     <h1>ShopEase</h1>
-    <input type="text" id="search-input" placeholder="Search products">
-    <button id="search-btn">Search</button>
-    <button id="all-products-btn">All Products</button>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search products...">
+      <button id="search-btn">Search</button>
+      <button id="all-btn">All Products</button>
+    </div>
   </header>
 
   <main>
-    <div id="product-list"></div>
-    <div id="product-details"></div>
+    <section id="products-section">
+      <div id="product-list" class="grid"></div>
+    </section>
+    <section id="product-details" class="hidden"></section>
   </main>
+
+  <footer>
+    <p>© 2025 ShopEase. All rights reserved.</p>
+  </footer>
 
   <script src="./scripts/shop.js" defer></script>
 </body>
