@@ -1,10 +1,11 @@
- const nameArray = [
-    ["P P P P P","   A   ","N       N","D D D D D","U       U"],
-    ["P       P"," A   A ","N N     N","D       D","U       U"],
-    ["P P P P P","A A A A","N   N   N","D       D","U       U"],
-    ["P        ","A     A","N     N N","D       D","U       U"],
-    ["P        ","A     A","N       N","D D D D D","U U U U U"]
+const nameArray = [
+    [" S S S S "," U     U "," P P P P "," R R R R "," I "," Y     Y "," A A A A "],
+    [" S       "," U     U "," P     P "," R     R "," I ","  Y   Y  "," A     A "],
+    [" S S S S "," U     U "," P P P P "," R R R R "," I ","   Y Y   "," A A A A "],
+    ["       S "," U     U "," P       "," R R     "," I ","    Y    "," A     A "],
+    [" S S S S ","  U U U  "," P       "," R   R   "," I ","    Y    "," A     A "]
 ];
+
 let finalName = "";
  
 for(let row of nameArray){
